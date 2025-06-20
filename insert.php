@@ -1,9 +1,7 @@
 <?php
- error_reporting(E_ALL);
-ini_set('display_errors', 1);
-$username = 'homeandf_onur';
-$password = '354472Onur';
-$connection = new PDO('mysql:host=localhost;dbname=homeandf_lagunabeachalya', $username, $password);
+
+require_once 'mysql/mysqlsorgu.php';
+$connection = getPDOConnection();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $t1 = $_POST["t1"];
