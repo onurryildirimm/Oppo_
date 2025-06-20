@@ -6,9 +6,8 @@ include 'class.phpmailer.php';
 include 'class.smtp.php';
 
 // Veritabanı bağlantısı
-$username = 'homeandf_onur';
-$password = '354472Onur';
-$connection = new PDO('mysql:host=localhost;dbname=homeandf_lagunabeachalya', $username, $password);
+require_once '../mysql/mysqlsorgu.php';
+$connection = getPDOConnection();
 
 // Mail bilgileri çek
 $server = $connection->query("SELECT server FROM smtpayar")->fetchColumn();
