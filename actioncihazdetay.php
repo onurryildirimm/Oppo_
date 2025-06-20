@@ -1,10 +1,7 @@
 <?php
 
-
-//Database connection by using PHP PDO
-$username = 'xxxx';
-$password = 'xxxx';
-$connection = new PDO( 'mysql:host=localhost;dbname=xxxxx', $username, $password ); // Create Object of PDO class by connecting to Mysql database
+require_once 'mysql/mysqlsorgu.php';
+$connection = getPDOConnection();
 
 if(isset($_POST["action"])) //Check value of $_POST["action"] variable value is set to not
 {
