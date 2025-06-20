@@ -42,10 +42,10 @@
 
     
 	 <?php
-$username = 'homeandf_onur';
-$password = '354472Onur';
-$servername = "localhost";
-$dbname = "homeandf_lagunabeachalya";
+$username = 'xxxxx';
+$password = 'xxxxx';
+$servername = "xxxx";
+$dbname = "xxxxx";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
