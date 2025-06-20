@@ -1,9 +1,9 @@
 <?php
 // Veritabanı bağlantısı
 $dbhost = 'localhost';
-$dbname = 'homeandf_demoportal';
-$dbuser = 'homeandf_onur';
-$dbpass = '354472Onur';
+$dbname = 'xxxx';
+$dbuser = 'xxxx';
+$dbpass = 'xxxxx';
 
 try {
     $db = new PDO("mysql:host=$dbhost;dbname=$dbname;charset=utf8", $dbuser, $dbpass);
